@@ -20,7 +20,7 @@
 }
 body {
   cursor: crosshair;
-  font-family: 'ArialNarrow'; /* Added fallback fonts */
+  font-family: 'ArialNarrow', Arial, sans-serif; /* Added fallback fonts */
     letter-spacing: 0.0008rem;
     margin: 0;
     padding: 0;
