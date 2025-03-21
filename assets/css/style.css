@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+
+/* 
+  You can use 'fontsquirrel' (https://www.fontsquirrel.com) 
+  or 'transfonter' (https://transfonter.org)
+  to generate your own font for the web from .ttf or .oft files 
+*/
+@font-face {
+  font-family: 'DMMono-light';
+  src:  url('DMMono-Light.ttf') format('ttf'),
+        
+}
+
+@font-face {
+  font-family: 'ArialNarrow';
+  src:  url('assets/fonts/EB garamond/Arial Narrow.ttf') format('ttf'),
+        
+}
+body {
+  cursor: crosshair;
+    font-family: 'ArialNarrow';
+    letter-spacing: 0.0008rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #cacaca;
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(255, 0, 0) 40%, rgb(248, 0, 0) 66%, rgb(252, 178, 178) 77%, rgb(255, 222, 222) 85%);
+    }
+   
+body.work-page {
+  background: #000000; /* New background color for work.html */
+  color: #ffffff; /* Text color specific to this page */
+}
+
+body.info-page {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,28,28,1) 17%, rgba(255,0,0,1) 36%, rgba(255,0,0,1) 48%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
+}
+
+
+main, .grid-container {
+  overflow: visible; /* Ensure content is visible */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 2rem;
+    margin-top: 0 2rem;
+    text-align: center;
+    margin-bottom: 2rem; /* Increased gap */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 1rem 0;
+    font-family: 'ArialNarrow';
+    letter-spacing: 0.0008rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0.1rem;
+    font-weight: 100;
+    text-align: left;
+    color: #ffffff;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+   justify-content: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0.1rem;
+    font-weight: 100;
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: right;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro {
+    padding: 2rem;
+}
+
+#intro p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Info section styles */
+.info-columns {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.info-columns .column {
+  flex: 1;
+  text-align: left;
+}
+
+.info-columns .column p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+
+.grid-container {
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Adjusted to maintain consistent gaps */
+  grid-template-rows: repeat(6, 1fr); /* Adjusted to maintain consistent gaps */
+  gap: 15px;
+  width: 100%;  /* Adjust this as needed */
+  max-width: 1300px; /* Adjust this as needed */
+  height: auto;
+}
+
+
+.grid-item {
+  width: 100%; /* Adjusted width to fit new grid layout */
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: block; /* Ensure all items are visible by default */
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; /* Increased gap */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.3);
+  z-index: 15; /* Bring the hovered item on top */
+  cursor: crosshair;
+}
+
+.hidden {
+  display: none;
+}
+
+#categories-list li {
+  font-size: 1rem;
+  color: #ffffff82;
+}
+
+#categories-list li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* 
+.overlay {
+  position: absolute;
+  pointer-events: auto;
+  z-index: 10;
+  left: 10px;
+  right: 10px;
+  bottom: 5px;
+  padding: 5px 10px;
+  background-color:  #cacaca; /* White with slight transparency */
+  /* color:   #ffffff; /* Black text */
+  /* text-align: center;
+  font-size: 13px; */ 
+
+ 
+/* } */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
+        grid-template-rows: auto;
+    }
+
+    .grid-item {
+        margin-top: 1rem; /* Adjust gap for smaller screens */
+    }
+}
+
