@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'ArialNarrow';
-  src:  url('assets/fonts/EB garamond/Arial Narrow.ttf') format('ttf'),
+  src:  url('assets/fonts/EB garamond/Arial Narrow.woff') format('woff'); /* Updated to .woff format */
         
 }
 body {
