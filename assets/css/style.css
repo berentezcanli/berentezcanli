@@ -62,7 +62,7 @@ header {
     width: 100%;
     display: flex;
     padding: 1rem 0;
-    font-family: 'ArialNarrow';
+    font-family: 'ArialNarrow', Arial, sans-serif; /* Added fallback fonts */
     letter-spacing: 0.0008rem;
     justify-content: space-between;
     align-items: center;
