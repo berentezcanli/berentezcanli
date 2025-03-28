@@ -36,8 +36,8 @@ body {
     }
    
 body.work-page {
-  background: #000000; /* New background color for work.html */
-  color: #ffffff; /* Text color specific to this page */
+    background: #000000;
+    color: #ffffff !important;
 }
 
 body.info-page {
