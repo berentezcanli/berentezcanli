@@ -40,6 +40,11 @@ body.work-page {
     color: #ffffff !important;
 }
 
+body.work-page h1,
+body.work-page nav a {
+    color: #ffffff;
+}
+
 body.info-page {
      color: #000000;
 
