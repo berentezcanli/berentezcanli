@@ -30,9 +30,9 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: #cacaca;
-    color: #ffffff;
+    color: #000000;
     background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(255, 0, 0) 40%, rgb(248, 0, 0) 66%, rgb(252, 178, 178) 77%, rgb(255, 222, 222) 85%);
+   
     }
    
 body.work-page {
@@ -41,7 +41,8 @@ body.work-page {
 }
 
 body.info-page {
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,28,28,1) 17%, rgba(255,0,0,1) 36%, rgba(255,0,0,1) 48%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
+    background: rgb(0, 0, 0);
+
 }
 
 
