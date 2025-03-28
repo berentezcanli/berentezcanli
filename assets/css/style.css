@@ -29,19 +29,19 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #cacaca;
-    color: #000000;
-    background: rgb(0, 0, 0);
+    background: #ffffff;
+    color: #ffffff;
+    
    
     }
    
 body.work-page {
-  background: #ffffff; /* New background color for work.html */
-  color: #000000; /* Text color specific to this page */
+  background: #000000; /* New background color for work.html */
+  color: #ffffff; /* Text color specific to this page */
 }
 
 body.info-page {
-    background: rgb(0, 0, 0);
+     color: #ffffff;
 
 }
 
@@ -67,6 +67,7 @@ header {
     letter-spacing: 0.0008rem;
     justify-content: space-between;
     align-items: center;
+    color: #000000;
 }
 
 header h1 {
@@ -78,8 +79,8 @@ header h1 {
     color: #000000;
 }
 
-header h1 .work-page {
-  color: #000000;
+header .work-page {
+  color: #ffffff;
 }
 
 h1 a {
