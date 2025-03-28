@@ -79,7 +79,7 @@ header h1 {
     color: #000000;
 }
 
-header h1 .work-page {
+header .work-page {
   color: #ffffff;
 }
 
@@ -105,6 +105,16 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0.1rem;
+    font-weight: 100;
+    color: #000000;
+    text-decoration: none;
+    justify-content: right;
+}
+
+nav ul li a .work-page {
     font-size: 1.1rem;
     margin: 0;
     padding: 0.1rem;
