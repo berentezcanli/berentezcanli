@@ -79,9 +79,6 @@ header h1 {
     color: #000000;
 }
 
-header .work-page {
-  color: #ffffff;
-}
 
 h1 a {
   text-decoration: none;
@@ -114,15 +111,7 @@ nav ul li a {
     justify-content: right;
 }
 
-nav ul li a .work-page {
-    font-size: 1.1rem;
-    margin: 0;
-    padding: 0.1rem;
-    font-weight: 100;
-    color: #000000;
-    text-decoration: none;
-    justify-content: right;
-}
+
 
 main {
     flex: 1;
